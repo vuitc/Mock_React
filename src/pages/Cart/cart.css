@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+table,
+td,
+th {
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 15px;
+}
+.ct-card {
+    max-width: 1200px;
+    width: calc(100% - 40px);
+    padding: 30px 20px;
+    margin: auto;
+}
+.ct-cart-b {
+    background: linear-gradient(-10deg, rgb(81, 99, 221), rgb(97, 119, 228));
+    color: white;
+    font-size: 16px;
+    line-height: 27px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+}
+.ct-cart-b > i {
+    font-size: 18px;
+    padding: 6px 12px;
+}
+.ct-button {
+    border: 1px solid #999;
+    outline: none;
+    padding: 8px 12px;
+    font-size: 16px;
+    background: #3b3eff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+.ct-button:hover {
+    filter: brightness(1.1);
+}
+.ct-items {
+    font-family: 'Poppin';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 27px;
+    color: #000;
+}
+.ct-package,
+.ct-typePackage,
+.ct-price,
+.ct-quantity {
+    font-size: 14px;
+    line-height: 27px;
+    color: #000000bf;
+}
+.ct-minus,
+.ct-plus {
+    padding: 4px 10px;
+    background: #3b3eff;
+    color: white;
+    font-size: 14px;
+    line-height: 27px;
+    border: 1px solid #999;
+    border-radius: 6px;
+}
+.ct-quan {
+    padding: 0 6px;
+}
+.ct-remove {
+    padding: 4px 12px;
+    outline: none;
+    border: none;
+    background: #3b3eff;
+    font-size: 16px;
+    border-radius: 5px;
+    color: white;
+}
+
+.ct-typePackage > img {
+    height: 48px;
+    object-fit: cover;
+}

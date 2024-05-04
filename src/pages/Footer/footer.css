@@ -1,0 +1,130 @@
+.subscribe-form {
+    /* padding: 20px; */
+    border-radius: 2px;
+}
+.grid-foot {
+    max-width: 1200px;
+    width: calc(100% - 40px);
+    padding: 0 20px;
+    margin: auto;
+}
+.subscribe-form input[type='text'] {
+    width: 100%;
+    margin: 0 12px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    background: #fff;
+}
+.subscribe-form input[type='text']:focus {
+    border: 1px solid #555;
+    outline: none;
+    background: #fff;
+    border-radius: 2px;
+}
+.input-group {
+    position: relative;
+    margin-top: 12px;
+}
+.subscribe-form button[type='submit'] {
+    position: absolute;
+    top: 0;
+    right: 26px;
+    bottom: 0;
+    z-index: 7;
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+.inline {
+    display: inline-block;
+    margin-left: 12px;
+    font-size: 16px;
+    word-spacing: 3px;
+}
+.col.l-6.c-12.flex-end {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.flex-end svg {
+    padding: 4px 8px;
+    fill: #ccc;
+    width: 34px;
+    height: 34px;
+    opacity: 0.8;
+}
+.flex-end svg:hover {
+    opacity: 1.1;
+    cursor: pointer;
+}
+.input-group > svg {
+    width: 24px;
+    height: 24px;
+}
+.foot-heading-r {
+    color: #ffffff80;
+    padding: 4px 0;
+    padding-left: 12px;
+}
+.center {
+    color: #ffffff80;
+    font-size: 14px;
+    line-height: 27px;
+    text-align: left;
+}
+@media (max-width: 640px) {
+    .col.l-6.c-12.flex-end {
+        justify-content: center;
+    }
+    .col.l-6.c-12.centers {
+        text-align: center;
+    }
+    .center {
+        text-align: center;
+    }
+    .inline {
+        display: block;
+        margin-top: 12px;
+    }
+}
+.b-foot {
+    background: #232640;
+    color: white;
+    padding: 32px 0;
+}
+.foot-heading {
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 500;
+    padding-left: 10px;
+}
+h2.center {
+    margin-top: 24px;
+}
+.centers {
+    margin-top: 24px;
+    padding-left: 10px;
+}
+.centers > a > svg {
+    fill: #3b7eff;
+    width: 18px;
+    position: relative;
+    top: -2px;
+    height: 18px;
+}
+.centers > a {
+    text-decoration: none;
+    color: white;
+}
+.foot-term {
+    text-align: center;
+    padding-top: 12px;
+}
+.foot-term > a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    line-height: 27px;
+}

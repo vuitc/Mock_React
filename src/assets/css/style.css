@@ -1,0 +1,76 @@
+@import url('slick-carousel/slick/slick.css');
+@import url('slick-carousel/slick/slick-theme.css');
+.a-breakcrumb-container {
+    background: linear-gradient(-6deg, rgb(238, 243, 249), rgb(238, 243, 249));
+    min-height: 200px;
+    padding-top: 67px;
+    padding-bottom: 61px;
+}
+.containers {
+    width: 1200px;
+    padding: 20px;
+    max-width: calc(100vw - 40px);
+    margin: auto;
+    text-align: center;
+}
+.a-breakcrumb-heading {
+    color: #000;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 68px;
+    text-align: center;
+}
+.a-breakcrumb-box {
+    max-width: 1200px;
+    width: calc(100% - 40px);
+    padding: 0 20px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.a-breakcrumb-breakcrumb {
+    font-size: 15px;
+    color: #000000bf;
+}
+.a-breakcrumb-item {
+    text-decoration: none;
+    color: #000000bf;
+    padding: 4px;
+}
+.a-breakcrumb-item:nth-child(1):hover {
+    cursor: pointer;
+}
+.containerss {
+    width: 1200px;
+    margin: 20px;
+    max-width: calc(100vw - 40px);
+    margin: auto;
+}
+
+@media (max-width: 576px) {
+    .a-breakcrumb-heading {
+        font-size: 34px;
+        line-height: 42px;
+    }
+    .p-card {
+        flex-basis: calc(100%);
+    }
+}
+
+@media (min-width: 576) and (max-width: 768px) {
+    .p-card {
+        flex-basis: calc(100%);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .p-card {
+        flex-basis: calc(100%);
+    }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+}

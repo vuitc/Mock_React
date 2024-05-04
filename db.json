@@ -1,0 +1,47 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "firstname": "John",
+            "lastname": "Doe",
+            "email": "john.doe@example.com",
+            "phone": "123456789",
+            "password": "password123"
+        },
+        {
+            "id": 2,
+            "firstname": "Jane",
+            "lastname": "Smith",
+            "email": "jane.smith@example.com",
+            "phone": "987654321",
+            "password": "Password@456"
+        },
+        {
+            "id": "22f0",
+            "firstname": "aa",
+            "lastname": "aa",
+            "email": "user2@example.com",
+            "phone": "0392029183",
+            "password": "Gg123123",
+            "confirmPassword": "Gg123123"
+        }
+    ],
+    "products": [
+        {
+            "id": "1",
+            "name": "Pro Max",
+            "price": 23,
+            "quantity": 5,
+            "img": "max1.jpg",
+            "title": "Free ship only province"
+        },
+        {
+            "id": "2",
+            "name": "Pro XS",
+            "price": 43,
+            "quantity": 2,
+            "img": "max2.jpg",
+            "title": "Hot trend 2024"
+        }
+    ]
+}

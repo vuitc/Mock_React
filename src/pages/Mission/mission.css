@@ -1,0 +1,333 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.btnSF {
+    border: none;
+    outline: none;
+    margin-top: 35px;
+    display: inline-block;
+    padding: 12px 35px;
+    background-color: #0154f7;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+.a-bt {
+    width: 200px;
+}
+
+.btnSF:hover > span {
+    padding-left: 10px;
+    transition: padding 0.3s ease;
+}
+
+.btnSF:hover > span::after {
+    content: '';
+    opacity: 1;
+}
+
+.btnSF > span {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.btnSF > span::after {
+    content: '\2192';
+    padding-left: 12px;
+}
+.m-commitment {
+    background-color: white;
+    width: calc(100% - 40px);
+    padding: 0 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+.m-commitment-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.m-commitment-left,
+.m-commitment-right {
+    flex-basis: calc(50% - 15px);
+    margin-bottom: 30px;
+    height: 100%;
+    padding-right: 10px;
+}
+
+.m-commitment-right > img {
+    width: 100%;
+    min-height: 320px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.m-commitment-left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 15px;
+    margin-left: 20px;
+}
+.m-commitment-heading {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 50px;
+}
+.m-commitment-title {
+    color: #000000bf;
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 500;
+}
+.m-commitment-list {
+    margin-top: 10px;
+}
+
+.m-commitment-item > i {
+    font-size: 15px;
+    color: #0d6efd;
+    line-height: 27px;
+    text-align: left;
+}
+.m-commitment-des {
+    padding-left: 16px;
+    font-size: 15px;
+    line-height: 27px;
+    color: #000000bf;
+}
+/* shape box */
+.m-commitment-shape {
+    border-radius: 5px;
+    width: calc(100%);
+    margin: auto;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.m-shape {
+    flex-basis: calc(50% - 10px);
+    padding: 32px;
+}
+.m-shape > i {
+    font-size: 30px;
+    line-height: 32px;
+    color: #3b7eff;
+    float: left;
+    width: 60px;
+    padding: 12px;
+    background: #eef3f9;
+    border-radius: 4px;
+}
+.m-shape-box {
+    float: right;
+    width: calc(100% - 60px);
+    padding-left: 20px;
+}
+.m-shape-heading {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    line-height: 27px;
+}
+.m-shape-title {
+    font-size: 15px;
+    line-height: 27px;
+    color: #000000bf;
+    margin-top: 16px;
+}
+.m-commitment-thumbs {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.m-thumb {
+    flex-basis: calc(33.3% - 16px);
+    margin-bottom: 16px;
+}
+.m-thumb > img {
+    width: 100%;
+}
+.btnSF.btn-m {
+    width: 200px;
+    height: 56px;
+    padding: 12px 16px;
+}
+.m-commitment-tabs {
+    width: 100%;
+    min-height: 600px;
+    box-sizing: border-box;
+    height: 100%;
+    background: url('../../assets/images/m.jpg');
+    /* object-fit: cover; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.m-tabs {
+    float: right;
+    margin-right: 30px;
+    width: calc(50%);
+    margin-top: 20px;
+}
+.m-tab.active {
+    background: #eefaf9;
+}
+.m-tab {
+    outline: none;
+    border: none;
+    padding: 12px 18px;
+    font-size: 22px;
+    line-height: 42px;
+    background: transparent;
+}
+.m-tab:nth-of-type(1) {
+    border-top-left-radius: 4px;
+}
+.m-tab:nth-last-of-type() {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.m-box-tabs {
+    padding-top: 30px;
+}
+.m-box {
+    width: 100%;
+    background-color: #eefaf9;
+    padding: 20px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.m-box-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+.m-box-icon > i {
+    color: #0154f7;
+    font-size: 36px;
+    padding: 6px;
+    margin-right: 12px;
+}
+.m-box-heading {
+    font-size: 20px;
+    line-height: 36px;
+    color: #000;
+}
+.m-box-title {
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000bf;
+}
+
+@media (max-width: 576px) {
+    .m-shape {
+        padding: 4px;
+    }
+    .m-shape-box {
+        padding-left: 0;
+    }
+    .m-commitment-heading {
+        text-align: center;
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 12px;
+    }
+    .m-commitment-title {
+        text-align: center;
+    }
+    .m-commitment-left {
+        margin: 0;
+        padding: 0;
+    }
+    .m-commitment-left,
+    .m-commitment-right {
+        flex-basis: calc(100%);
+    }
+}
+
+@media (max-width: 768px) {
+    .m-commitment-left,
+    .m-commitment-right {
+        flex-basis: calc(100% - 10px);
+        margin-bottom: 30px;
+        height: 100%;
+    }
+    .m-commitment-left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .m-commitment-heading {
+        font-size: 32px;
+    }
+    .m-commitment-title {
+        font-size: 14px;
+    }
+    .btnSF.btn-m {
+        width: 90%;
+    }
+    .m-shape {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-basis: calc(100% - 10px);
+    }
+    .m-shape-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .m-shape-heading {
+        margin-top: 20px;
+    }
+    .m-shape-title {
+        text-align: center;
+    }
+    .m-thumb {
+        flex-basis: calc(100%);
+    }
+    .m-box-tabs {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .m-tabs {
+        float: left;
+        width: 100%;
+        padding: 0 20px;
+    }
+    .m-tab {
+        display: block;
+        width: 100%;
+        padding: 0 20px;
+        height: 56px;
+        background: #eefaf9;
+        margin-bottom: 10px;
+        border-radius: 4px;
+    }
+    .m-box {
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+}

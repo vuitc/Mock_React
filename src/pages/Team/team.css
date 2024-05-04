@@ -1,0 +1,214 @@
+.btnSF {
+    border: none;
+    outline: none;
+    margin-top: 35px;
+    display: inline-block;
+    padding: 12px 35px;
+    background-color: #0154f7;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+.a-bt {
+    width: 200px;
+}
+
+.btnSF:hover > span {
+    padding-left: 10px;
+    transition: padding 0.3s ease;
+}
+
+.btnSF:hover > span::after {
+    content: '';
+    opacity: 1;
+}
+
+.btnSF > span {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.btnSF > span::after {
+    content: '\2192';
+    padding-left: 12px;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.t-teams {
+    display: flex;
+    max-width: 1200px;
+    width: calc(100% - 40px);
+    padding: 0 20px;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.t-cards {
+    background-color: white;
+    border-radius: 5px;
+    flex-basis: calc(25% - 30px);
+    margin-bottom: 30px;
+    box-shadow: 0 0 1px 1px #000000bf;
+    cursor: pointer;
+    overflow: hidden;
+}
+.t-thumb {
+    width: 100%;
+    position: relative;
+}
+.t-thumb > img {
+    width: 100%;
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.t-cards:hover .t-thumb > img,
+.t-thumb-icons:hover ~ img {
+    filter: none !important;
+}
+
+.t-cards:hover .t-thumb .t-thumb-icons {
+    bottom: 0;
+    display: flex;
+}
+
+.t-thumb-icons {
+    position: absolute;
+    content: '';
+    bottom: -50px;
+    display: none;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    z-index: 0;
+    flex-direction: row;
+}
+@keyframes slideIn {
+    0% {
+        bottom: -50px;
+        opacity: 0;
+    }
+    100% {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
+.t-thumb-icons {
+    animation: slideIn 0.3s forwards;
+}
+
+.t-thumb-icons > a {
+    font-size: 16px;
+    color: white;
+    background-color: #0d6efd;
+    padding: 16px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+}
+.t-thumb-icons > a:nth-child(1) {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.t-thumb-icons > a:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.t-heading {
+    font-size: 20px;
+    color: #000;
+    line-height: 27px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 26px;
+}
+.t-title {
+    font-size: 15px;
+    line-height: 27px;
+    text-align: center;
+    color: #4c4c4d;
+    margin-bottom: 26px;
+}
+/* t-foot */
+.t-foots {
+    margin-top: 80px;
+    background: url('../../assets//images/head.jpg');
+    object-fit: cover;
+    min-height: 200px;
+}
+.t-foot {
+    max-width: 1200px;
+    width: calc(100% - 40px);
+    padding: 0 20px;
+    padding-top: 50px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.t-foot-item > i {
+    font-size: 40px;
+    line-height: 74px;
+    color: #111;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.t-foot-item {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.t-foot-box {
+}
+.t-foot-heading {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 50px;
+    color: #000;
+}
+.t-foot-title {
+    margin-top: 12px;
+    font-size: 15px;
+    line-height: 27px;
+    color: #000000bf;
+}
+@media (max-width: 576px) {
+}
+
+@media (max-width: 768px) {
+    .t-cards {
+        flex-basis: calc(100% - 20px);
+    }
+    .t-foot {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .t-foot-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .t-foot-heading {
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .t-cards {
+        flex-basis: calc(50% - 10px);
+    }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+}
